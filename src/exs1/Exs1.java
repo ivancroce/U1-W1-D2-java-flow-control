@@ -16,7 +16,7 @@ public class Exs1 {
 
 
 public static boolean leapYear(int year) {
-    if (year % 400 == 0) {
+    /*if (year % 400 == 0) {
         return true;
     } else if (year % 100 == 0) {
         return false;
@@ -24,7 +24,7 @@ public static boolean leapYear(int year) {
         return true;
     } else {
         return false;
-    }
+    }*/
 
     // if statement can be simplified in:
     /* if (year % 400 == 0) {
@@ -32,6 +32,14 @@ public static boolean leapYear(int year) {
     } else if (year % 100 == 0) {
         return false;
     } else return year % 4 == 0; */
+
+    if (year % 400 == 0) {
+        return true;
+    } else if (year % 4 == 0 && year % 100 != 0) {
+        return true;
+        } else {
+        return false;
+    }
 
     // && and || or
     // It is divisible by 4 and (not divisible by 100 or divisible by 400)

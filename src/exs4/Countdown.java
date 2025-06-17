@@ -1,16 +1,16 @@
-package exs2;
+package exs4;
 
 import java.util.Scanner;
 
-public class Main {
+public class Countdown {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Insert a number between 0 and 3:");
+        System.out.print("Insert a number: ");
         int number = scanner.nextInt();
 
-        String word = Exs2.numberToWord(number);
-        System.out.println(word);
+        for (int i = number; i >= 0; i--) {
+            System.out.println(i);
+        }
 
         scanner.close();
     }
